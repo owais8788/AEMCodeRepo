@@ -1,0 +1,16 @@
+<div class="col-md-3 col-sm-12 col-xs-12">
+				<div class="sidebar">
+					<div class="celebrities" >
+						<h4 class="sb-title">Spotlight Celebrities</h4>
+						<sly data-sly-use.celebritiesModel="com.idmedia.core.models.SpotlightCelebritiesModel" />
+						<div class="celeb-item" data-sly-list.items="${celebritiesModel.csList}">
+							<a href="  "><img src="${items.image}" alt="" width="70" height="70"></a>
+							<div class="celeb-author">
+								<h6><a href="  ">${items.firstName} ${items.lastName} </a></h6>
+								<span>Actor</span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>

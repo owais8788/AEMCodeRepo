@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <basic-af/>
+    <blank-af/>
+    <blank-af-v2/>
+    <catalog-page/>
+    <category-page/>
+    <landing-page/>
+    <product-page/>
+    <page-content/>
+    <xf-web-variation/>
+    <rep:policy/>
+    <id-media-free-form/>
+    <movie-detail-template/>
+    <test/>
+    <root-page/>
+</jcr:root>

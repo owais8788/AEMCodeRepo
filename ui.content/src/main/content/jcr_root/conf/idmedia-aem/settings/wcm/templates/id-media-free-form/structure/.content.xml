@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2023-05-02T11:31:34.078+05:30"
+        cq:lastModifiedBy="owais"
+        cq:template="/conf/idmedia-aem/settings/wcm/templates/id-media-free-form"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="idmedia-aem/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid"
+            layout="responsiveGrid">
+            <experiencefragment
+                jcr:created="{Date}2023-04-15T16:39:13.607+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-04-15T16:39:21.535+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="idmedia-aem/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/idmedia-aem/us/en/site/header/master">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="12"/>
+                </cq:responsive>
+            </experiencefragment>
+            <container
+                jcr:created="{Date}2023-04-15T16:28:20.830+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-04-19T13:23:25.006+05:30"
+                jcr:lastModifiedBy="owais"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="idmedia-aem/components/container"
+                editable="{Boolean}true"/>
+            <experiencefragment_411552297
+                jcr:created="{Date}2023-04-19T13:23:36.897+05:30"
+                jcr:createdBy="owais"
+                jcr:lastModified="{Date}2023-04-19T13:23:36.897+05:30"
+                jcr:lastModifiedBy="owais"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="idmedia-aem/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/idmedia-aem/us/en/site/footer/master">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="12"/>
+                </cq:responsive>
+            </experiencefragment_411552297>
+            <responsivegrid
+                jcr:created="{Date}2023-04-29T11:32:15.806+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-04-29T11:32:15.806+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="idmedia-aem/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="12"/>
+                </cq:responsive>
+                <responsivegrid
+                    jcr:created="{Date}2023-04-29T11:33:53.840+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-04-29T11:33:53.840+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/responsivegrid">
+                    <cq:responsive jcr:primaryType="nt:unstructured"/>
+                </responsivegrid>
+            </responsivegrid>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Long}768"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Long}1200"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

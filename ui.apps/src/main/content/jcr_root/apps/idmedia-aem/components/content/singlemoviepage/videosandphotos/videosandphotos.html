@@ -1,0 +1,13 @@
+
+<sly data-sly-use.imagesAndVideosModel="com.idmedia.core.models.ImagesAndVideosModel"/>
+    <div class="title-hd-sm">
+        <h4>Videos &amp; Photos</h4>
+        <a href="#" class="time"><i class="ion-ios-arrow-right"></i></a>
+    </div>
+    <div data-sly-list.imagesAndVideosModellist="${imagesAndVideosModel.imagesAndVideos}">
+        <div class="mvsingle-item ov-item">
+            <a class="img-lightbox" data-fancybox-group="gallery" href="${imagesAndVideosModellist.link}"><img src="${imagesAndVideosModellist.fileReference @ context='unsafe'}" width="280px" height="240px" alt="" /></a>
+        </div>
+    </div>
+</sly>
+

@@ -1,0 +1,14 @@
+<div class="mvsingle-item media-item">
+     <sly data-sly-use.video="com.idmedia.core.models.MediaVideoModel" />
+    <div class="vd-item" data-sly-list.videoList="${video.mediaVideo}">
+        <div class="vd-it">
+            <img class="vd-img" src="images/uploads/vd-item1.jpg" alt="" />
+            <a class="fancybox-media hvr-grow" href="${videoList.link}" rel="playlist"><img src="${videoList.fileReference @ context = 'unsafe'}" alt="" /></a>
+        </div>
+        <div class="vd-infor">
+            <h6><a href="${videoList.link2}">${videoList.label}</a></h6>
+            <p class="time">${videoList.label2}</p>
+        </div>
+    </div>
+</div>
+

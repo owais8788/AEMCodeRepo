@@ -1,0 +1,13 @@
+
+<sly data-sly-use.movieReviewModel="com.idmedia.core.models.MovieReviewModel">
+${movieReviewModel.title}</br>
+
+    <div data-sly-list.movieReviewList="${movieReviewModel.movieReviewPojoList}">
+        ${movieReviewList.movieTitle}<br />
+        <p>${movieReviewList.userMovieReview}</p><br/>
+       <p>${movieReviewList.userMovieRating}</p>
+
+    </div>
+</sly>
+
+

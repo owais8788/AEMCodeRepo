@@ -1,0 +1,36 @@
+<sly data-sly-use.myModel = "com.idmedia.core.models.PageCarouselModel"/>
+    <div>
+        <div class="slider movie-items dark" style="background-image: url()">
+            <div class="container">
+                <div class="row">
+                    <div class="social-link">
+                        <p>Follow us:</p>
+                        <a href="${properties.facebookLink}"><i class="ion-social-facebook"></i></a>
+                        <a href="${myModel.twitterLink @ context='unsafe'}"><i class="ion-social-twitter"></i></a>
+                        <a href="${myModel.instagramLink @ context='unsafe'}"><i class="ion-social-instagram"></i></a>
+                        <a href="${myModel.youtubeLink @ context='unsafe'}"><i class="ion-social-youtube"></i></a>
+                    </div>
+                    <div class="slick-multiItemSlider">
+					<sly data-sly-list.propertyList = "${myModel.ppp}">
+                        <div>
+                            <div class="movie-item">
+                                <div class="mv-img">
+                                    <a href="#"><img src="${propertyList.bannerimagefield}" alt="" width="285" height="437" /></a>
+                                </div>
+                                <div class="title-in">
+                                <sly data-sly-list.genre="${propertyList.genreList}">
+                                    <div class="cate">
+                                       <span class="blue"><a href="#">${genre}</a></span>
+                                    </div>
+                                    </sly>
+                                    <h6><a href="google.com">${propertyList.title}</a></h6>
+                                    <p><i class="ion-android-star"></i><span>7</span> /10</p>
+                                </div>
+                            </div>
+                        </div>
+						</sly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,5 @@
+ <sly data-sly-use.photo="com.idmedia.core.models.MediaPhotoModel"/>
+<div class="mvsingle-item" data-sly-list.photoList="${photo.mediaPhotoList}" >
+    <a class="img-lightbox" data-fancybox-group="gallery" href=""> <img src="${photoList.image  @context='unsafe'}" alt="" width="500" height="600"> </a>
+    </sly>
+</div> 

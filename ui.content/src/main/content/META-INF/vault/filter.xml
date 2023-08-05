@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/idmedia-aem" mode="merge"/>
+    <filter root="/content/idmedia-aem" mode="merge"/>
+    <filter root="/content/dam/idmedia-aem" mode="merge">
+        <exclude pattern="/content/dam/idmedia-aem(/.*)?"/>
+        <include pattern="/content/dam/idmedia-aem/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/idmedia-aem/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/idmedia-aem" mode="merge"/>
+</workspaceFilter>

@@ -1,0 +1,89 @@
+ <html lang="en" class="no-js">
+    <!-- index_light16:05-->
+    <head>
+        <!-- Basic need -->
+        <title>Open Pediatrics</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
+        <link rel="profile" href="#" />
+
+        <!--Google Font-->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600" />
+        <!-- Mobile specific meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="format-detection" content="telephone-no" />
+
+        <!-- CSS files -->
+        <link rel="stylesheet" href="css/plugins.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <style type="text/css">
+            .fancybox-margin {
+                margin-right: 14px;
+            }
+        </style>
+        <script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/tweet.6352a9eebf6f1aa3bcc0a57d66d2a72d.js"></script>
+    </head>
+
+    <body>
+        <div class="col-md-8">
+            <div class="title-hd">
+                <h2>in theater</h2>
+                <a href="#" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
+            </div>
+            <div class="tabs">
+                <ul class="tab-links">
+                    <!-- <li class="active"><a href="#tab1">#Popular</a></li> -->
+                    <!-- <li><a href="#tab2"> #Coming soon</a></li>
+                    <li><a href="#tab3">  #Top rated  </a></li>
+                    <li><a href="#tab4"> #Most reviewed</a></li>                         -->
+                </ul>
+                <div class="tab-content">
+				<sly data-sly-use.inTheatre="com.infodalesRitesh.aem.core.models.InTheatreModel">
+                    <div id="tab1" class="tab active">
+					
+                      <div class="row">
+						<div data-sly-list.inTheatreList="${inTheatre.inTheaterPojoList}">
+                            <div class="slick-multiItem slick-initialized slick-slider slick-dotted" role="toolbar">
+                                <div class="slide-it slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 192px;" tabindex="-1" role="option" aria-describedby="slick-slide00">
+                                    <div class="movie-item">
+                                        <div class="mv-img">
+                                            <img src="${inTheatreList.tileimage}" width="280px"  height="240px" alt="" title=""/>
+                                        </div>
+                                        <div class="hvr-inner">
+                                            <a href="moviesingle.html" tabindex="0"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                        </div>
+                                        <div class="title-in">
+                                            <h6><a href="#" tabindex="0">${inTheatreList.title}</a></h6>
+                                            <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+							
+                        </div>
+                     </div>
+				  </sly>
+                        <ul class="slick-dots" style="" role="tablist">
+                            <li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true" aria-controls="navigation00" id="slick-slide00">
+                                <button type="button" data-role="none" role="button" tabindex="0">1</button>
+                            </li>
+                            <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation01" id="slick-slide01"><button type="button" data-role="none" role="button" tabindex="0">2</button></li>
+                            <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation02" id="slick-slide02"><button type="button" data-role="none" role="button" tabindex="0">3</button></li>
+                        </ul>
+						
+                    </div>
+				
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/plugins2.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>

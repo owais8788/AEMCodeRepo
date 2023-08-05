@@ -1,0 +1,59 @@
+<!--<sly data-sly-use.myModel="com.idmedia.core.models.MoviePageSideTagsModel">
+
+<sly data-sly-test.tags="${myModel.moviePageSideTag}">
+    Actress Tags:
+    <sly data-sly-list.li="${tags.actress}">
+        ${li}
+    </sly>
+</sly>-->
+
+
+
+<div class="col-md-4 col-xs-12 col-sm-12">
+    <sly data-sly-use.movieSideTag="com.idmedia.core.models.MoviePageSideTagsModel">
+    <sly data-sly-test.tList="${movieSideTag.moviePageSideTag}">
+        <div class="sb-it">
+            <h6>Director:</h6>
+            <sly data-sly-list.tagDirector="${tList.director}">
+                <a href="#">${tagDirector}</a>
+            </sly>
+        </div>
+
+        <div class="sb-it">
+            <h6>Writer:</h6>
+            <sly data-sly-list.tagWriter="${tList.writer}">
+                <a href="#">${tagWriter}</a>
+            </sly>
+        </div>
+        <div class="sb-it">
+            <h6>Actors:</h6>
+            <sly data-sly-list.tagActor="${tList.actors}">
+                <a href="#">${tagActor}</a>
+            </sly>
+        </div>
+        <div class="sb-it">
+            <h6>Actress:</h6>
+            <sly data-sly-list.tagActress="${tList.actress}">
+                <p><a href="#">${tagActress}</a>
+            </sly>
+        </div>
+        <div class="sb-it">
+            <h6>Genre:</h6>
+            <sly data-sly-list.tagGenre="${tList.genre}">
+                <a href="#">${tagGenre}</a>
+            </sly>
+        </div>
+        <div class="sb-it">
+            <h6>Release Date:</h6>
+            <p>${tList.releaseData}</p>
+        </div>
+        <div class="sb-it">
+            <h6>Run Time:</h6>
+            <p>${tList.runTime}</p>
+        </div>
+    </sly>
+        </sly>
+</div> 
+
+
+

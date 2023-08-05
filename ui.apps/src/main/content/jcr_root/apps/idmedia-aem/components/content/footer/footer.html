@@ -1,0 +1,48 @@
+<footer class="ht-footer">
+    <div class="container">
+        <div class="flex-parent-ft">
+            <div class="flex-child-ft item1">
+                <a href="${properties.link}"><img class="logo" src="${properties.fileReference}" alt="" /></a>
+                <p>
+                    5th Avenue st, manhattan<br />
+                    New York, NY 10001
+                </p>
+                <p>${properties.rte}</p>
+            </div>
+            <sly data-sly-use.footerModel="com.idmedia.core.models.FooterModel" />
+
+            <div class="flex-child-ft item2" data-sly-list.navigationList="${footerModel.middleNavigation}">
+                <h4>${callusList.label}</h4>
+                <ul data-sly-list.subMenuLevelOneList="${navigationList.subMenuLevelOne}">
+                    <li><a href="${subMenuLevelOneList.link}">${subMenuLevelOneList.label}</a></li>
+                </ul>
+            </div>
+            <div class="flex-child-ft item5">
+                <h4>Newsletter</h4>
+                <p>
+                    ${properties.rte}
+                </p>
+                <form action="#">
+                    <input type="text" placeholder="Enter your email..." />
+                </form>
+                <a href="#" class="btn">Subscribe now <i class="ion-ios-arrow-forward"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="ft-copyright">
+        <div class="ft-left">
+            <p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
+        </div>
+        <div class="backtotop">
+            <p>
+                <a href="#" id="back-to-top">Back to top <i class="ion-ios-arrow-thin-up"></i></a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+	<!-- CSS files -->
+	<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.js @ categories='idmedia-footer'}"/>
+
+

@@ -1,0 +1,69 @@
+<sly data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}">
+
+<!--/* for css+js */-->
+<sly data-sly-call="${clientLib.all @ categories='idmedia.login'}" data-sly-unwrap></sly>
+</sly>
+
+<div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'login')">Login</button>
+        <button class="tablinks" onclick="openTab(event, 'signup')">Signup</button>
+      </div>
+
+      <div id="login" class="tabcontent">
+        <h3>Login Form</h3>
+        <form id="login-form">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+
+          <label for="password">Password:</label>
+          <input type="password" id="loginPassword" name="password">
+          <input type="checkbox" onclick="myloginFunction()" style="width:10px;">Show Password<br>
+      
+          <button type="submit" >Login</button>
+        </form>
+      </div>
+
+      <div id="signup" class="tabcontent">
+        <h3>Signup Form</h3>
+        <div>
+        <form id="signup-form">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required title="Please enter your firstname">
+      
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required title="Please enter your lastname">
+      
+          <label for="email">Email:</label>
+          <input type="email" id="Remail" name="email" required title="Please enter your email">
+      
+          <label for="password">Password:</label>
+          <input type="password" id="registrationPassword" name="password" required title="Please enter your password">
+          <input type="checkbox" onclick="myFunction()" style="width:10px;">Show Password
+      
+          <label for="phoneNumber">Phone Number:</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber">
+      
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+      
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob">
+      
+          <label for="country">Country:</label>
+          <input type="text" id="country" name="country">
+      
+          <label for="subscription">Subscription:</label>
+          <select id="subscription" name="subscription" >
+            <option value="1">3 Months</option>
+            <option value="2">6 Months</option>
+            <option value="3">1 Year</option>
+          </select>
+      
+          <button type="submit">Signup</button>
+        </form>
+      </div>
+    </div>
