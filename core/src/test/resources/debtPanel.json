@@ -1,0 +1,29 @@
+{
+  "debtObj": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "admin",
+    "interestPaidOutputAmount": "677",
+    "toolTipIcon": "/content/dam/techcombank/rdb-app/images/img1.png",
+    "depositAmountTool": "deposit tool tip",
+    "iconImage": "/content/dam/techcombank/rdb-app/images/sample-2.bmp",
+    "monthText": "13",
+    "jcr:lastModifiedBy": "admin",
+    "totalRecievedLabel": "total recieved",
+    "interestPaidLabel": "12",
+    "termLabelText": "6",
+    "interestRateTool": "intrest tool tip",
+    "jcr:created": "Thu Aug 10 2023 14:35:22 GMT+0530",
+    "termInputField": "456",
+    "totalRecievedOutputAmount": "4674",
+    "depositAmountInput": "123",
+    "depositAmountLabel": "deposit amount",
+    "iconImageAlt": "icon image alt",
+    "termToolTip": "term tool tip",
+    "jcr:lastModified": "Thu Aug 10 2023 18:29:55 GMT+0530",
+    "currencyText": "12367",
+    "interestRate": "5",
+    "sling:resourceType": "techcombank/components/debttabspanel",
+    "outputPanelBg": "/content/dam/techcombank/rdb-app/images/img2.png",
+    "interestRateSlider": "345"
+  }
+}
